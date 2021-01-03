@@ -2,7 +2,7 @@
 ### Vanga class
 Let you have a hidden function f and we have n pairs (x, f(x)). If f(x) is similar to:
 
-a[n - 1] * pow(x, (n - 1) * step) + a[n - 2] * pow(x, (n - 1) * step) + ... + a[1] * pow(x, step) + a[0]
+a[n - 1] * pow(x, (n - 1) * step) + a[n - 2] * pow(x, (n - 2) * step) + ... + a[1] * pow(x, step) + a[0]
 
 then Vanga can easily emulate it very accurately with O(n ** 3) time for training and O(n) time for prediction.
 
