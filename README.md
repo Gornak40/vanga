@@ -8,7 +8,7 @@ then Vanga can easily emulate it very accurately with O(n ** 3) time for trainin
 
 But with huge n it is not optimal way.
 
-# NoiseVanga class
+### NoiseVanga class
 This implementation of vanga algorithm is much more fast. Let us fix the value n, which is now doesn't connected to the size of training set, step and the number of training epochs E. NoiseVanga will use Vanga class E times with n random pairs from training set and calculate the averange of weights.
 
 Now the training time is O(E * n ** 3), but n is constant so O(E) and prediction time is O(1). Also this algorithm can stay some noise with huge datasets.
